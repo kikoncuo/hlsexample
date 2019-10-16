@@ -1,0 +1,21 @@
+{
+  "name": "ipfstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "get-video-duration": "^1.0.3",
+    "hls-server": "^1.5.0",
+    "ipfs-http-client": "^38.2.0",
+    "node-static": "^0.7.11"
+  },
+  "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20"
+  }
+}
