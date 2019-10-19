@@ -5,6 +5,7 @@ var fs = require('fs');
 
 const fileLocation = process.argv[2] || "./videos/"
 const URL = process.argv[3] || "http://127.0.0.1:8080/"
+const port = URL.split(':')[2].substring(0, 4);
 
 
 try {
@@ -66,7 +67,7 @@ fs.readdir(fileLocation, function (err, files) {
             //
             file.serve(request, response);
         }).resume();
-      }).listen(8080);
+      }).listen(port);
 
       console.log('Finished encoding in '+fileLocation+'http.m3u8')
       console.log('Serving the packages in '+URL)
